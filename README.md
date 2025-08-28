@@ -1,38 +1,82 @@
-# DIO - Trilha .NET - Fundamentos
-www.dio.me
 
-## Desafio de projeto
-Para este desafio, você precisará usar seus conhecimentos adquiridos no módulo de fundamentos, da trilha .NET da DIO.
+<div align="center">
 
-## Contexto
-Você foi contratado para construir um sistema para um estacionamento, que será usado para gerenciar os veículos estacionados e realizar suas operações, como por exemplo adicionar um veículo, remover um veículo (e exibir o valor cobrado durante o período) e listar os veículos.
+# 💜🚗 Sistema de Estacionamento - DIO .NET
 
-## Proposta
-Você precisará construir uma classe chamada "Estacionamento", conforme o diagrama abaixo:
-![Diagrama de classe estacionamento](diagrama_classe_estacionamento.png)
+<img src="https://img.shields.io/badge/.NET-Fundamentos-6E40C9?style=for-the-badge&logo=dotnet&logoColor=white" />
+<img src="https://img.shields.io/badge/Projeto-DIO-6E40C9?style=for-the-badge" />
+<img src="https://img.shields.io/badge/Feito_por-Aline-6E40C9?style=for-the-badge" />
 
-A classe contém três variáveis, sendo:
+</div>
 
-**precoInicial**: Tipo decimal. É o preço cobrado para deixar seu veículo estacionado.
+---
 
-**precoPorHora**: Tipo decimal. É o preço por hora que o veículo permanecer estacionado.
+## 🧠 Sobre o Projeto
 
-**veiculos**: É uma lista de string, representando uma coleção de veículos estacionados. Contém apenas a placa do veículo.
+Este repositório contém minha solução para o desafio proposto no módulo de **Fundamentos da Trilha .NET** da DIO. Durante o bootcamp, mergulhei nos conceitos essenciais de programação orientada a objetos, manipulação de listas, estruturas de controle e interação com o usuário via console — e aqui coloquei tudo isso em prática!
 
-A classe contém três métodos, sendo:
+---
 
-**AdicionarVeiculo**: Método responsável por receber uma placa digitada pelo usuário e guardar na variável **veiculos**.
+## 📋 Desafio
 
-**RemoverVeiculo**: Método responsável por verificar se um determinado veículo está estacionado, e caso positivo, irá pedir a quantidade de horas que ele permaneceu no estacionamento. Após isso, realiza o seguinte cálculo: **precoInicial** * **precoPorHora**, exibindo para o usuário.
+Fui desafiada a desenvolver um sistema de gerenciamento de estacionamento. O sistema deve permitir:
 
-**ListarVeiculos**: Lista todos os veículos presentes atualmente no estacionamento. Caso não haja nenhum, exibir a mensagem "Não há veículos estacionados".
+- ✅ Adicionar veículos
+- ✅ Remover veículos (com cálculo de valor)
+- ✅ Listar veículos estacionados
 
-Por último, deverá ser feito um menu interativo com as seguintes ações implementadas:
-1. Cadastrar veículo
-2. Remover veículo
-3. Listar veículos
-4. Encerrar
+Tudo isso por meio de um menu interativo no console.
 
+---
 
-## Solução
-O código está pela metade, e você deverá dar continuidade obedecendo as regras descritas acima, para que no final, tenhamos um programa funcional. Procure pela palavra comentada "TODO" no código, em seguida, implemente conforme as regras acima.
+## 🏗️ Estrutura da Classe <span style="color:#6E40C9"><strong>Estacionamento</strong></span>
+
+```csharp
+public class Estacionamento
+{
+    decimal precoInicial;
+    decimal precoPorHora;
+    List<string> veiculos;
+
+    void AdicionarVeiculo();
+    void RemoverVeiculo();
+    void ListarVeiculos();
+}
+```
+
+---
+
+## 🎮 Menu Interativo
+
+```text
+1 - Cadastrar veículo
+2 - Remover veículo
+3 - Listar veículos
+4 - Encerrar
+```
+
+---
+
+## ✍️ Minha Solução
+
+O código inicial veio com marcações `TODO`, e eu completei cada parte com base nos conceitos aprendidos. O resultado é um sistema funcional, intuitivo e pronto para evoluir!
+
+---
+
+## 💡 Aprendizados
+
+Durante o desenvolvimento, aprofundei meu entendimento sobre:
+
+- Lógica de programação com C#
+- Boas práticas de código limpo
+- Estrutura de projetos em .NET
+- Pensamento orientado a objetos
+
+---
+
+## 📬 Contribuições
+
+Sinta-se à vontade para sugerir melhorias ou deixar seu feedback. 💜
+
+---
+
